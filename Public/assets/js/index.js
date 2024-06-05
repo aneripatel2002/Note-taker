@@ -4,7 +4,6 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
-// Check if the current page is notes.html
 if (window.location.pathname === "/notes") {
   noteTitle = document.querySelector(".note-title");
   noteText = document.querySelector(".note-textarea");
@@ -12,7 +11,6 @@ if (window.location.pathname === "/notes") {
   newNoteBtn = document.querySelector(".new-note");
   noteList = document.querySelector(".list-container .list-group");
 
-  // Add event listeners
   saveNoteBtn.addEventListener("click", handleNoteSave);
   newNoteBtn.addEventListener("click", handleNewNoteView);
   noteTitle.addEventListener("keyup", handleRenderSaveBtn);
